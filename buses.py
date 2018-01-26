@@ -3,10 +3,8 @@ from google.transit import gtfs_realtime_pb2
 import requests
 import time
 import pickle
+from sensitive import routes, headers, home_stop
 url='https://api.transport.nsw.gov.au/v1/gtfs/realtime/buses'
-headers= {'Authorization' : 'apikey MN1Z52Ww3dwBxyKOvOOBQbJio5wup7GKCEts', 'Accept' : 'application/x-google-protobuf'}
-routes=("2440_178", "2440_180", "2440_E75", "2440_E76", "2440_E77", "2440_E78", "2440_E79")
-home_stop="210028"
 
 
 
